@@ -7,7 +7,7 @@ as a dependency in your Drupal site to load the autoload.php file.
 ## Installation
 1. Copy the module into your sites/all/modules folder.
 2. Go to http://example.com/admin/modules and enable the Composer Autoloader
-   (or do so with drush with the command `drush pm-enable composer_manager`).
+   (or do so with drush with the command `drush pm-enable composer_autoloader`).
 
 ## Configuration
 The default configuration is to load autoload.php that is located in
