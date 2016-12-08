@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function composer_autoloader_install() {
+  composer_autoloader_update_7001();
+}
+
+function composer_autoloader_update_7001() {
+  db_update('system')
+    ->fields(array('weight' => -9999))
+    ->condition('name', 'composer_autoloader')
+    ->execute();
+}
