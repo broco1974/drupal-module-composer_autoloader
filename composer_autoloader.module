@@ -1,11 +1,9 @@
 <?php
 
 /**
- * Implements hook_init().
- *
  * Require the Composer Autoload File.
  */
-function composer_autoloader_init() {
+function composer_autoloader__init() {
 
   // Define the default path to the  composer autoloader.
   $default = DRUPAL_ROOT . '/../vendor/autoload.php';
@@ -42,3 +40,5 @@ function composer_autoloader_init() {
   require_once $autoloader;
 
 }
+
+composer_autoloader__init();
